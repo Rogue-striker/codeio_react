@@ -29,7 +29,7 @@ const NavBar = () => {
           </select>
           <div className='flex ml-4'>
             <Button handleClick= {handlefontDecrement} icon = {minusIcon}/>
-             <h2 className="p-1 text-center bg-transparent hover:text-purple w-10fgi">{fontSize}</h2>
+             <h2 className="p-1 text-center bg-transparent hover:text-purple w-10 ">{fontSize}</h2>
             <Button handleClick = {handlefontIncrement} icon = {plusIcon}/>
           </div>
         </div>
