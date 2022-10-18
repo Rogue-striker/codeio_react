@@ -1,15 +1,15 @@
 import React, { useContext, useEffect, useState } from 'react'
 import codeContext from '../../Contexts/CodeContext'
-import closeIcon from './../../Assets/icons/closeIcon.svg'
+// import closeIcon from './../../Assets/icons/closeIcon.svg'
 const ResultIframeComp = () => {
   const [htmlCode, setHtmlCode] = useContext(codeContext)['html']
   const [cssCode, setCssCode] = useContext(codeContext)['css']
   const [jsCode,setJsCode] = useContext(codeContext)['js']
-  const [openConsole, setOpenConsole] = useState(false)
+  // const [openConsole, setOpenConsole] = useState(false)
 
-  const handleOpenConsole = () => {
-    setOpenConsole(!openConsole)
-  }
+  // const handleOpenConsole = () => {
+  //   setOpenConsole(!openConsole)
+  // }
 
   useEffect(()=>{
     const html = localStorage.getItem('html')
@@ -34,7 +34,7 @@ const ResultIframeComp = () => {
         </button>
         </div>
       </div>
-      {
+      {/* {
         openConsole && <>
           <div className='w-screen h-72 absolute bottom-0 z-10 bg-background text-white'>
             <div className='flex justify-between ml-2 mt-2'>
@@ -47,7 +47,7 @@ const ResultIframeComp = () => {
             </div>
           </div>
         </>
-      }
+      } */}
     </div>
   )
 }
