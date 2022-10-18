@@ -27,14 +27,15 @@ const ResultIframeComp = () => {
         width="100%" height="100%" className='overflow-x-auto overflow-y-auto'
       >
       </iframe>
+      {/*
       <div className='absolute bottom-0 bg-black w-screen text-white pl-4'>
         <div className='flex gap-2'>
-        <button onClick={handleOpenConsole} className="cursor-pointer">
-          console
-        </button>
+      <button onClick={handleOpenConsole} className="cursor-pointer">
+        console
+      </button>
         </div>
       </div>
-      {/* {
+       {
         openConsole && <>
           <div className='w-screen h-72 absolute bottom-0 z-10 bg-background text-white'>
             <div className='flex justify-between ml-2 mt-2'>
